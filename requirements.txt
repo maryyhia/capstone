@@ -2,4 +2,4 @@ streamlit
 pandas
 transformers
 tweepy
-plotly
+plotly.express
