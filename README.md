@@ -14,7 +14,7 @@ Thus, the aim is to segment and target the right audience for amrketing efforts 
 ------
 
 ## Problem Statement
-#### Build a model with at least 90% accuracy that helps to identify between those who are looking for bootcamp style learning as oppose to computer science majors or prospective students based on the words they use online.
+#### Build a Sentiment analysis model with at least 90% accuracy toidentify between the different sentiments on Twitter tweets. Build a Toxic Comments multi-label model with at least 90% accuracy to rate the level of toxicity in comments on Twitter Tweets.
 
 ------
 
@@ -59,37 +59,31 @@ Thus, the aim is to segment and target the right audience for amrketing efforts 
 
 ------
 ### Streamlit App Deployment
-![streamlit](relative/path/to/img.jpg?raw=true "Title")
+![streamlit tweet](https://user-images.githubusercontent.com/115082902/214318625-317164f0-1bdd-48f0-98b0-3f68bc156272.jpg)
+![streamlit viz](https://user-images.githubusercontent.com/115082902/214318646-d3a82b23-5e85-4fef-8ab6-2b486089ccd2.jpg)
+
 
 ------
 ### Key takeaways:
-1. Best performing model used N-gram Count Vectorizer and Multinomial Naive Bayes with a F1 score of 95% accuracy
-2. Most mentioned words for r/codingbootcamp revolved around attaining a job
-3. Most mentioned words for r/csMajors revolved around attaining an internship
-4. r/codingbootcamp has emphasis on schools that offer bootcamps
+1. Best performing model for Sentiment Analysis Model used Count Vectorizer and Multinomial Naive Bayes with a accuracy score of 91%
+2. Best performing model for Toxic Comments Model used TF-IDF and One vs Rest multi-label classifier with a accuracy score of 96%
 
 ------
-### Next Steps, Recommendations, Conclusion
-#### Moving forward
-With more time and resources, more data could be gathered not just from reddit, but across various online platforms. This could help the model identify across mediums as well. Like videos, images, and short texts.
+### Limitations, Moving Forward, Conclusion
+#### Limitations & Moving Forward
+Sentiment Analysis Model
+A larger dataset can be used to further train the model such as the Sentiment 140 dataset that has 1.6M rows of data. As many tweets contained abbreviations, training the model to identify and learn abbreivated words will increase model accuracy. Many tweets also included images/ gifs/ videos, a deep learning model can be used to read and analyse these. 
 
-Along with that, a better understanding of the different acronyms and abbreviations within the text post would allow for a more thorough analysis and breakdown. 
+Toxic Comments Model
+As the dataset only contained approximate 10% toxic- labelled data, more toxic-labeled data can be added to further increase model accuracy. Additionally, hyperparameter tuning of the models will also increase model accuracy and consistency. As the comments have varying lengths, and the dataset is fairly large, a deep learning model can be develop to identify and label toxic comemnts.
 
-Doing a sentiment analsis would also give a better picture of the difference between coding bootcamps and computer science majors. This allows for a different perspective of the students invovled in both educational choices. 
+Twitter 
+The API allows to search all recent tweets, but it does not have a language filter. This does not allow the model to train efficiently as it cannot filter for only English language tweets. By further developing the preproceses or by upgrading the Twitter API access, it may allow for either enabling the filter of only the English language, or by training across multiple languages. This is further increase model accuracy and consistency. 
 
-#### Recommendations
-Using the model to look at keywords.
-The features produced by the model will allow General Assembly marketing team to better identify suitable posts to engage with. 
-
-Automating the model.
-Deployment of the model to automatically scan the social media interations across platforms. This helps the team to collate just the posts they need to engage with and evaluate. 
-
-Marketing efforts.
-Boost marketing across channels to increase visibility and presence against competitors. By making use of the keywords marketing materials could hone in on those interested in the bootcamp type courses and maybe sway those looking at full degree programs to hop over. 
+Dashboard Development
+With the Twitter API on hand, this allows for the creation of a real-time live dashboard showing incoming tweets in real-time and generating a moving graph plot to show the sentiments and also identify toxic comments. With this developed, it has uses in real-world such as in live events whereby gauging the performance of the event throught he sentiemnt analysis and byt detecting toxic comments and removing them before it spreads. 
 
 #### Conclusion
-General Assembly needs to stand out from our competitors and be able to accurately and effectively identify potential students. There is a need to increase visibility and be quick in response. In today's fast paced environment, speed is also essential in being able to act before our competitors. 
-
-The model is able to correctly identify around 95% of the users who are interested in coding bootcamps. This would allow General Assembly to better maximise the marketing outreach and increase our conversation rate. 
+Both models, Sentiment Analysis Model and Toxic Comments Model, achieved >90% accuracy. 91% for Sentiment Analysis Model, and 96% for Toxic Xomments Model. Further development of the models will allow for higher accuracy, consistency, and scalability. Accessibility to multiple languages nad mediums will allow the models to be train for efficient usage. And by creating a real-time live dashboard allows for various uses across industries. 
 
 ------
