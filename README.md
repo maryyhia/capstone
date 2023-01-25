@@ -3,13 +3,20 @@
 ------
 
 ## Background
-There has been a surge in demand for data professionals in recent years. This led to an increased competition in the space for coding bootcamps. Competitors like Hack Reactor, Le Wagon, Vertical Institute, and Rocket Academy, have risen to meet the demands. If no action is taken, General Assembly may be faced with decline in market share, poor marketing ROI, and poorer lead generation. 
+Information and communication technology has chaged rapidly over the past 20 years, with a key development being the emergence of social media. The pace of change is accelerating. For example, the development of mobile technology has played an essential role in shaping the impact of social media. Mobile devices put the means to connect anywhere, at any time, on any device in everyone's hands. With the rise of social media, it brings about both positive and negative impact in the world we live.
 
-The General Assembly marketing team would need to better identify the online presence of a bootcamp seeker as opposed to that of the computer science major to aid in tergeted advertising. As both are fairly similar in nature, efforts to further segregate the two targets could yield better advertising ROI.
+In politics, the influence of social media in political campaigns has increased tremendously.It is known that most people receive their political news primarily through social media, and those who do get their news primarily through social media tend to be less well-informed and more likely to be exposed to unproven claims. 
 
-Keywords are an important aspect of the digital advertising, allowing for targeted strategies at all levels of the marketing funnel. They also guide marketing teams on the sort of advertising content that is required.
+The impact of social media on the society is bred through the internet. This is because social networks feed off interactions among people. Without social media, social, ethicial, environmental, and political ills would have minimal visibility. Increasaed visibility of issues has shifted the balance of power from the hands of a few to the masses. 
 
-Thus, the aim is to segment and target the right audience for amrketing efforts streamline marketing efforts, rasie brand awareness with interested individuals, and increase advertising ROI. 
+Businesses have realised they can use social media to generate insights, stimulate demand, and create targeted product offerings. These functions are important in the building blocks of businesses and in the world of e-commerce. The flipside would be the influence of social 'shares'. When products attract a lot of shares, it can reinforce sales. But when the reverse is true, customers begin to distrust the product and the company. 
+
+In the world of work, social media has a profound effect on recruitment and hiring. Professional social networks like LinkedIn are important social mdia platforms for anyone looking to stand out in their profession. Employers and hiring managers make their decision based on information found on social media. 
+
+Given the rise and effectiveness of social media, comes about a darker side to the coin. Cyberbullying have been noted and has risen over the years. The misuse of social media to spread rumours, share videos aimed at destroying reputations, and to blackmail others. Hateful comments can be seen on just about every platform including the gaming industry. Behind the shield of a screen, society have grown more confident in dishing toxic comments, of varying intensity, on social media as compared to face-to-face confrontation.  
+
+It is clear that there needs to be a way of limiting the toxicity spreading over the internet. By being able to grasp the general sentiment a product, being an actual product, or a company's brand, or a person's image, it sways the general public's opinion. With this in mind, steps can be taken to reinforce positive returns. To add to this, by efficiently detecting toxic comments, and by their severity, it allows for it to be hidden or taken down. This not only reduces the negative impact its aimed to do, but to also reduce the corruption of hate in people's minds. 
+
 
 ------
 
