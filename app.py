@@ -28,11 +28,11 @@ identityhatemodel = pickle.load(open('identity_hate_model.pkl','rb'))
 #load vectorizer
 vectorizer = pickle.load(open('toxicvect2.pkl','rb'))
 
-consumer_key = 'ipRSSBuXCVYFJaH4HUJ38hthX'
-consumer_secret = 'WmHCmpY4XlCjXZgrXBw4tyKrj8Q9YrMFihjkujF7pj7gvubX5j'
-access_token = "1611988991540359168-RLRq6cKrvGNnT4jJTWeACwldPYFMSW"
-access_token_secret = "aoEy74xtYZDP2LCEe2tWCvgQpfBHZTRJAbIm10LpHyYxd"
-bearer_token = "AAAAAAAAAAAAAAAAAAAAAApclAEAAAAA7OC61TbdTEi7fRuU%2FUEqcxTltG0%3DWPxMXIOvjUChlVL8pODubf4dVw9GqUOPdeIH9p7CkykOH74700"
+consumer_key = 'consumer key'
+consumer_secret = 'consumer secret'
+access_token = "access token"
+access_token_secret = "access token secret"
+bearer_token = "bearer token"
 client = tw.Client(bearer_token)
 auth = tw.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
@@ -166,88 +166,3 @@ with st.container():
 
 
 
-
-#  data = pd.DataFrame(data=[tweet.text for tweet in tweets], columns=['Tweets'])
-#         data['Clean_Tweet'] = data['Tweets'].apply(clean_text)
-#         pred = model.predict(data['Clean_Tweet'])
-#         data['Sentiment'] = pred.tolist()
-#         data['Date'] = np.array([tweet.created_at for tweet in tweets]).tolist()
-
-#         # date_data = pd.DataFrame(data=[tweet.created_at for tweet in tweets], columns=['Date'])
-#         # all_data = pd.concat([date_data, data], axis=1 )
-#         st.write(data).head()
-
-
-        # for tweet in tweets:
-        #     tweet_list = [i.text for i in tweets]
-        #     p = [i for i in classifier(tweet_list)]
-        #     q=[p[i]['label'] for i in range(len(p))]
-        #     df = pd.DataFrame(list(zip(tweet_list, q)),columns =['Latest Tweets on '+search_words, 'Sentiment'])
-        #     st.write(df)
-
-
-
-# include piechart to show general sentiments of the topic ranging 1year. 
-# include scatter plot to show general sentiments of the topic ranging 1year. 
-
-
-
-# def run():
-
-#     with st.form(key='Enter topic'):
-#         search_words = st.text_input('Enter topic')
-#         number_of_tweets = st.number_input('Enter the number of latest tweets for which you want to know the sentiment(Maximum 50 tweets)', 0,50,10)
-#         submit_button = st.form_submit_button(label='Submit')
-
-#     if submit_button:
-#         tweets =tw.Cursor(api.search_tweets, q = search_words, lang="en").items(number_of_tweets)
-#         tweet_list = [i.text for i in tweets]
-#         p = [i for i in classifier(tweet_list)]
-#         q=[p[i]['label'] for i in range(len(p))]
-#         df = pd.DataFrame(list(zip(tweet_list, q)),columns =['Latest '+str(number_of_tweets)+' Tweets'+' on '+search_words, 'Sentiment'])
-#         st.write(df)	
-
-# if __name__=='__main__':
-#     run()
-
-
-    # if submit_button:
-    #     tweets =tw.Cursor(api.search_tweets, q = search_words,lang="en").items(number_of_tweets)
-    #     tweet_list = [i.text for i in tweets]
-    #     clean_tweet = list(map(clean_text, tweet_list))
-    #     p = [i for i in model.predict(clean_tweet)]
-    #     q=[p[i]['label'] for i in range(len(p))]
-    #     df = pd.DataFrame(list(zip(tweet_list, q)),columns =['Latest '+str(number_of_tweets)+' Tweets'+' on '+search_words, 'Sentiment'])
-    #     st.write(df)
-
-
-
-        # client = tw.API(auth, wait_on_rate_limit=True)
-
-        # def get_tweets(twitter_user_name, page_limit = 16, count_tweet=200):
-        #     all_tweets = []
-        #     for page in tw.Cursor(client.user_timeline, 
-        #                 screen_name=twitter_user_name, 
-        #                 count=count_tweet).pages(page_limit):
-        #         for tweet in page:
-        #             parsed_tweet = {}
-        #             parsed_tweet['date'] = tweet.created_at
-        #             parsed_tweet['text'] = tweet.text
-                
-        #         all_tweets.append(parsed_tweet)    
-        #     # Create dataframe 
-        #     df = pd.DataFrame(all_tweets)    
-        #     # Revome duplicates if there are any
-        #     df = df.drop_duplicates( "text" , keep='first')    
-        #     return df  
-
-
-
-        #         fig_col1, fig_col2 = st.columns(2)
-        # with fig_col1:
-        #     px.line(data, x=data['Date'], y=data['Sentiment'])
-        #     st.plotly_chart(fig_col1)
-        # with fig_col2:
-        #     px.pie(values=data['Date'], names=data['Sentiment'])
-        #     st.plotly_chart(fig_col2)
-    
